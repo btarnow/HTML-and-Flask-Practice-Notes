@@ -35,10 +35,13 @@ def show_intro_form():
 def show_biography_form_info():
     """Greet the user"""
 
+    # to pull the information from the intro form the user committed, you need 
+    # to access the values from that form. To do that... do the following:
     # variable = request.args.get(‘variable_name’) 
-    # ^whatever goes in the parentheses needs to match whatever was in name in 
-    # the form that is being passed through. That then passes the value to 
-    # that key with the .get method. 
+                                 # ^whatever goes in the parentheses needs to 
+                                 # match whatever was in name in the form that 
+                                 # is being passed through. That then passes the 
+                                 # value to that key with the .get method. 
 
     first_name = request.args.get("first_name")
     last_name = request.args.get("last_name")
