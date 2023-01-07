@@ -11,7 +11,7 @@ will get the base of what is needed started -->
     to add an action and method attribute to your form element. It submits its 
     values to route specified in the form’s action attribute.
 -->
-    <form action="page_send_to" method="GET">
+    <form action="/greet" method="GET">
         <!-- It's best practice to add a label before the input element. 
         It's good practice to fill out a "for" attribute within the label. 
         Within the associated input element, also set an id to the same name 
@@ -23,7 +23,7 @@ will get the base of what is needed started -->
        
         <div>
             <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" placeholder="Type here">
+            <input type="text" name ="first_name" id="first_name" placeholder="Type here">
         </div>
 
         <!-- Putting each other these input elements into their own div element
@@ -31,21 +31,22 @@ will get the base of what is needed started -->
         both show up on the same line withiin the webpage  -->
         <div>
             <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" placeholder="Type here">
+            <input type="text" name="last_name" id="last_name" placeholder="Type here">
         </div>
 
         <div>
-            <label>What's your race?</label>
-            <label for="white">White</label>
-            <input type="checkbox" id="white" value="white">
-
-            <label for="black">Black</label>
-            <input type="checkbox" id="black" value="black">
+            <label>What's your favorite color</label>
+            <input type = "radio" name="fav_color" value="pink">
+            <label>Pink</lable>
+            <input type = "radio" name="fav_color" value="purple">
+            <label>Purple</lable>
+            <input type = "radio" name="fav_color" value="green">
+            <label>Green</lable>
         </div>
 
+
         <div>
-            <!-- <label for=""> </label>
-            <input type="" id=""> -->
+          <input type="submit">
         </div>
 
     </form>
@@ -54,7 +55,7 @@ will get the base of what is needed started -->
 </html>
 
 
-<!-- Making a table... -->
+<!-- Making a table practice ... -->
      <!-- <table>
                 <tr>
                     <td>
@@ -74,3 +75,13 @@ will get the base of what is needed started -->
 
                 </tr>
         </table> -->
+
+<!-- Making checkboxes practice -->
+<!--        <label for="white">White</label>
+            <input type="checkbox" id="white" value="white">
+
+            <label for="black">Black</label>
+            <input type="checkbox" id="black" value="black">
+
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue" value="blue"> -->
