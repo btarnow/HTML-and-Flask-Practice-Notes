@@ -1,18 +1,13 @@
+# Need to import Flask in order to use it. From Flask, you aslo need to import
+# render_template in order to use that feature to call html pages, and request 
+# to use request.args.get OR request.form.
 from flask import Flask, render_template, request
 
 # "__name__" is a special Python variable for the name of the current module
 # Flask wants to know this to know what any imported things are relative to.
 app = Flask(__name__)
 
-
-# GET Request Notes:
-# The GET method is implied by default an HTML form…
-
-# <form action="/greet">
-# is the same as specifying:
-# <form action="/greet" method="GET">
-
-# ...and the GET method is implied by default in the route
+# The GET method is implied by default in the route
 # @app.route('/greet')
 # is the same as specifying:
 # @app.route('/greet', methods=['GET'])
@@ -61,7 +56,9 @@ def show_biography_form_info():
                                     # request.args.get is equal to. 
 
 
-#this needs to go at the bottom of your python page: 
+# This dunder main below needs to go at the bottom of your python page: 
+# if __name__ == '__main__' tells Python to execute code if you’re running 
+# a script directly.
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads"
     # our web app if we change the code.

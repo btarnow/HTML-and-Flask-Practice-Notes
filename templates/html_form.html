@@ -10,9 +10,18 @@ will get the base of what is needed started -->
     <!-- To sumbit the form and actually have the data go somewhere, you need
     to add an action and method attribute to your form element. It submits its 
     values to route specified in the form’s action attribute.
--->
+
+    GET Request Notes:
+    The GET method is implied by default an HTML form…
+
+    <form action="/greet">
+    is the same as specifying:
+    <form action="/greet" method="GET"> -->
+
     <form action="/greet" method="GET">
-        <!-- It's best practice to add a label before the input element. 
+
+        <!-- A NOTE ABOUT THE LABEL AND FOR BELOW!
+            It's best practice to add a label before the input element. 
         It's good practice to fill out a "for" attribute within the label. 
         Within the associated input element, also set an id to the same name 
         as the for. It's helpful for people using screen readers to fill out 
@@ -25,6 +34,7 @@ will get the base of what is needed started -->
             <label for="first_name">First Name:</label>
             <input type="text" name ="first_name" id="first_name" placeholder="Type here">
         </div>
+        <!-- FOR and ID MUST MATCH EACH OTHER! -->
 
         <!-- Putting each other these input elements into their own div element
         makes them NOT be in on the same line. If they weren't in divs they'd 
