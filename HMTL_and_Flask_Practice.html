@@ -1,0 +1,76 @@
+<!-- To autopopulate an HTML form, use the command shift+1+enter and it 
+will get the base of what is needed started -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Form</title>
+</head>
+<body>
+    <!-- To sumbit the form and actually have the data go somewhere, you need
+    to add an action and method attribute to your form element. It submits its 
+    values to route specified in the form’s action attribute.
+-->
+    <form action="page_send_to" method="GET">
+        <!-- It's best practice to add a label before the input element. 
+        It's good practice to fill out a "for" attribute within the label. 
+        Within the associated input element, also set an id to the same name 
+        as the for. It's helpful for people using screen readers to fill out 
+        your form, as well as if you click on the label, it'll select this 
+        input box. There's also a name attribute. What sort of name do we want
+        to give that data? Think of it like a variable. If you want any 
+        placeholder text to show up, you can use the attribute placeholder  -->
+       
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" placeholder="Type here">
+        </div>
+
+        <!-- Putting each other these input elements into their own div element
+        makes them NOT be in on the same line. If they weren't in divs they'd 
+        both show up on the same line withiin the webpage  -->
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" placeholder="Type here">
+        </div>
+
+        <div>
+            <label>What's your race?</label>
+            <label for="white">White</label>
+            <input type="checkbox" id="white" value="white">
+
+            <label for="black">Black</label>
+            <input type="checkbox" id="black" value="black">
+        </div>
+
+        <div>
+            <!-- <label for=""> </label>
+            <input type="" id=""> -->
+        </div>
+
+    </form>
+    
+</body>
+</html>
+
+
+<!-- Making a table... -->
+     <!-- <table>
+                <tr>
+                    <td>
+                        Username: 
+                    </td>
+                    <td>
+                        <input type="text" name="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+
+                </tr>
+        </table> -->
