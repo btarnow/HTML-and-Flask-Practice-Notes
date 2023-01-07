@@ -40,14 +40,25 @@ def show_intro_form():
 def show_biography_form_info():
     """Greet the user"""
 
+    # variable = request.args.get(‘variable_name’) 
+    # ^whatever goes in the parentheses needs to match whatever was in name in 
+    # the form that is being passed through. That then passes the value to 
+    # that key with the .get method. 
+
     first_name = request.args.get("first_name")
     last_name = request.args.get("last_name")
     fav_color = request.args.get("fav_color")
 
     return render_template("greeting_user.html", 
-                            fav_color = fav_color,
-                            last_name = last_name,
-                            first_name = first_name)
+                            color = fav_color,
+                            l_name = last_name,
+                            f_name = first_name)
+                            # ^ the first variable name will be the name that 
+                            # of the variable you will see on the extended page 
+                            # (see extend_page_example.html to visualize)
+                                    # ^the second variable name will be whatever
+                                    # you put as the variable the 
+                                    # request.args.get is equal to. 
 
 
 #this needs to go at the bottom of your python page: 
