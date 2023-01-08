@@ -47,13 +47,15 @@ def show_biography_form_info():
     last_name = request.args.get("last_name")
     fav_color = request.args.get("fav_color")
 
+    color_2 = "blue"
     return render_template("greeting_user.html", 
                             color = fav_color,
                             l_name = last_name,
-                            f_name = first_name)
+                            f_name = first_name,
+                            color_2 = color_2)
                             # ^ the first variable name will be the name that 
-                            # of the variable you will see on the extended page 
-                            # (see extend_page_example.html to visualize)
+                            # of the variable you will use on the extended page 
+                            # (see greeting_user.html to visualize)
                                     # ^the second variable name will be whatever
                                     # you put as the variable the 
                                     # request.args.get is equal to. 
